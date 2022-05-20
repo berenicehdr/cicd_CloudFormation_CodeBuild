@@ -56,7 +56,7 @@ Resources:
       Source:
         Type: GITHUB
         Location: 'https://github.com/berenicehdr/cicd_CloudFormation_CodeBuild.git'
-        BuildSpec: buildspec.yaml
+        BuildSpec: buildspec.yml
         Auth:
             Type: OAUTH
             Resource: !Ref CodeBuildSourceCredential
