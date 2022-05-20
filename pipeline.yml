@@ -54,16 +54,13 @@ Resources:
       ServiceRole: !GetAtt CodeBuildServiceRole.Arn
    
       Source:
-      
         Type: GITHUB
         Location: 'https://github.com/berenicehdr/cicd_CloudFormation_CodeBuild.git'
-    
-        BuildSpec: buildspec.yml
+        BuildSpec: buildspec.yaml
         Auth:
             Type: OAUTH
             Resource: !Ref CodeBuildSourceCredential
       Artifacts:
- 
         Type: NO_ARTIFACTS
       Triggers:
         Webhook: true
